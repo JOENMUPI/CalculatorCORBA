@@ -1,0 +1,11 @@
+module MatApp{
+    interface Mat{
+        float suma(in float x, in float y);
+        float resta(in float x, in float y);
+        float multi(in float x, in float y);
+        float divi(in float x, in float y);
+        float potencia(in float x, in float y);
+        float raiz(in float x, in float y);
+        oneway void shutdown();
+    };
+};

@@ -1,0 +1,6 @@
+cd C:\Users\jose mundo\.eclipse\WorkSpace\Corba\src
+idlj -fall Mat.idl
+javac JEMP/ORG/*.java MatApp/*.java
+start orbd -ORBInitialPort 1050
+java ServerOrb -ORBInitialPort 1050 -ORBInitialHost localhost
+java ClientOrb -ORBInitialPort 1050 -ORBInitialHost localhost
